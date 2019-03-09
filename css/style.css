@@ -1,0 +1,11 @@
+/*Базовые настройки сетки*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+/*Шапка сайта*/
+/*# sourceMappingURL=style.css.map */
