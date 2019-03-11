@@ -8,6 +8,14 @@
   margin: auto;
 }
 /*Шапка сайта*/
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 99;
+}
 .navbar-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,6 +45,39 @@
   font-size: 14px;
   color: #7b7b79;
   text-decoration: none;
+}
+.menu {
+  position: fixed;
+  z-index: 0;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  padding: 16px 0;
+  background-color: #507fe1;
+  color: #ffffff;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  /*&_active {
+	transform: translateY(0);
+}*/
+}
+.menu_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.menu_link {
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 .menu-button {
   display: -webkit-box;
@@ -78,6 +119,23 @@
   font-size: 14px;
   color: #7b7b79;
 }
+/*Блок hero*/
+.hero {
+  background: #f1f1f1 url("../images/hero/hero-bg.jpg") no-repeat center top 80px;
+  background-size: contain;
+  padding-top: 180px;
+  padding-bottom: 270px;
+}
+.hero_title {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.hero_subtitle {
+  display: block;
+  margin-bottom: 67px;
+  font-size: 30px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
 /*Шрифты*/
 @font-face {
   font-family: 'Proxima Nova Semibold';
@@ -105,6 +163,14 @@ body {
   font-size: 12px;
   font-family: 'Proxima Nova Semibold', sans-serif;
   color: #507fe1;
+}
+.button {
+  border: none;
+  text-transform: uppercase;
+  padding: 25px 45px;
+  background-color: #507fe1;
+  color: #ffffff;
+  font-family: 'Proxima Nova Semibold', sans-serif;
 }
 /*Цвета*/
 /*# sourceMappingURL=style.css.map */

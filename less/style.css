@@ -14,9 +14,6 @@
   min-height: 80px;
   justify-content: space-between;
 }
-.navbar_menu-button {
-  margin-right: 30px;
-}
 .navbar_mobile,
 .navbar_landline {
   text-align: right;
@@ -26,7 +23,14 @@
   font-size: 19px;
   font-family: 'Proxima Nova Semibold', sans-serif;
   text-decoration: none;
-  color: #1c1c1c;
+  color: #262626;
+  margin-bottom: 5px;
+}
+.navbar_small-text {
+  display: block;
+  font-size: 14px;
+  color: #7b7b79;
+  text-decoration: none;
 }
 .menu-button {
   display: flex;
@@ -57,7 +61,12 @@
 .logo_description {
   display: block;
   font-size: 14px;
-  color: #6b6b6b;
+  color: #7b7b79;
+}
+/*Блок hero*/
+.hero {
+  background: #f1f1f1 url("../images/hero/hero-bg.jpg") no-repeat center;
+  background-size: cover;
 }
 /*Шрифты*/
 @font-face {
@@ -77,6 +86,14 @@
 /*Настройки интерфейса*/
 body {
   font-family: 'Proxima Nova Light', sans-serif;
-  color: #262630;
+  color: #262626;
+}
+.button-o {
+  border: 2px solid #507fe1;
+  padding: 17px 22px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  color: #507fe1;
 }
 /*Цвета*/
