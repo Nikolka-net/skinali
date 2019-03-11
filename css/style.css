@@ -8,4 +8,103 @@
   margin: auto;
 }
 /*Шапка сайта*/
+.navbar-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 80px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.navbar_mobile,
+.navbar_landline {
+  text-align: right;
+}
+.navbar_phone {
+  display: block;
+  font-size: 19px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  text-decoration: none;
+  color: #262626;
+  margin-bottom: 5px;
+}
+.navbar_small-text {
+  display: block;
+  font-size: 14px;
+  color: #7b7b79;
+  text-decoration: none;
+}
+.menu-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  border: none;
+  border-right: 1px solid rgba(81, 11, 186, 0.1);
+  border-left: 1px solid rgba(81, 11, 186, 0.1);
+  width: 70px;
+  height: 80px;
+}
+.menu-button_line {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background-color: #89a9eb;
+  margin: 2px 0;
+}
+.logo_text {
+  display: block;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  margin-bottom: 5px;
+}
+.logo_description {
+  display: block;
+  font-size: 14px;
+  color: #7b7b79;
+}
+/*Шрифты*/
+@font-face {
+  font-family: 'Proxima Nova Semibold';
+  src: url('../fonts/ProximaNova-Semibold.eot');
+  src: url('../fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Semibold.woff') format('woff'), url('../fonts/ProximaNova-Semibold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url('../fonts/ProximaNova-Light.eot');
+  src: url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Light.woff') format('woff'), url('../fonts/ProximaNova-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/*Настройки интерфейса*/
+body {
+  font-family: 'Proxima Nova Light', sans-serif;
+  color: #262626;
+}
+.button-o {
+  border: 2px solid #507fe1;
+  padding: 17px 22px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  color: #507fe1;
+}
+/*Цвета*/
 /*# sourceMappingURL=style.css.map */
