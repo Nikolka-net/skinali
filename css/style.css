@@ -7,6 +7,22 @@
   max-width: 1170px;
   margin: auto;
 }
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
 /*Шапка сайта*/
 .navbar {
   position: fixed;
@@ -23,7 +39,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 80px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -57,8 +72,8 @@
   color: #ffffff;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
   /*&_active {
 	transform: translateY(0);
 }*/
@@ -119,6 +134,32 @@
   font-size: 14px;
   color: #7b7b79;
 }
+@media (max-width: 991px) {
+  .navbar_mobile,
+  .navbar_landline {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .logo {
+    display: none;
+  }
+  .menu {
+    top: 60px;
+  }
+  .menu-button {
+    height: 60px;
+  }
+  .menu_nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu_link {
+    margin-bottom: 20px;
+  }
+}
 /*Блок hero*/
 .hero {
   background: #f1f1f1 url("../images/hero/hero-bg.jpg") no-repeat center top 80px;
@@ -135,6 +176,12 @@
   margin-bottom: 67px;
   font-size: 30px;
   font-family: 'Proxima Nova Semibold', sans-serif;
+}
+@media (max-width: 991px) {
+  .hero {
+    background-size: cover;
+    background-position: top left 30%;
+  }
 }
 /*Шрифты*/
 @font-face {
@@ -163,6 +210,7 @@ body {
   font-size: 12px;
   font-family: 'Proxima Nova Semibold', sans-serif;
   color: #507fe1;
+  background-color: #ffffff;
 }
 .button {
   border: none;
@@ -171,6 +219,11 @@ body {
   background-color: #507fe1;
   color: #ffffff;
   font-family: 'Proxima Nova Semibold', sans-serif;
+}
+@media (max-width: 576px) {
+  .button-o {
+    font-size: 10px;
+  }
 }
 /*Цвета*/
 /*# sourceMappingURL=style.css.map */
