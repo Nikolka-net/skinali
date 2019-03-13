@@ -236,7 +236,7 @@ input[type="checkbox"] {
   display: none;
 }
 input[type="checkbox"]:checked + label:before {
-  background-color: green;
+  background-color: #507fe1;
 }
 .checkbox-label {
   display: -webkit-box;
@@ -246,6 +246,9 @@ input[type="checkbox"]:checked + label:before {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 40px;
+}
+.checkbox-label:hover {
+  cursor: pointer;
 }
 .checkbox-label:before {
   content: '';
@@ -265,8 +268,12 @@ input[type="checkbox"]:checked + label:before {
   padding: 129px 0;
 }
 .offer-block {
-  background-color: #fff;
+  background: #ffffff url('../images/offer/form-bg.png') no-repeat center right;
+  background-size: contain;
   padding: 80px;
+  margin-top: -200px;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 }
 .offer_title {
   font-size: 25px;
@@ -312,5 +319,48 @@ input[type="checkbox"]:checked + label:before {
 .form_button {
   height: 80px;
   width: 100%;
+}
+@media (max-width: 1199px) {
+  .offer-block {
+    background-position: center right -120px;
+  }
+}
+@media (max-width: 768px) {
+  .offer-block {
+    background: none;
+    background-color: #fff;
+    padding: 40px;
+  }
+  .offer_title {
+    font-size: 18px;
+  }
+  .offer_subtitle {
+    font-size: 16px;
+  }
+  .form_row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form_row-checkbox {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .form_group {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: 100%;
+  }
+  .form_input {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .offer-block {
+    padding: 5px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

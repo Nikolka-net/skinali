@@ -36,7 +36,7 @@ input[type="checkbox"] {
 	display: none;
 
 	&:checked + label:before {
-		background-color: green;
+		background-color: @primary;
 	}
 }
 
@@ -45,6 +45,10 @@ input[type="checkbox"] {
 		display: flex;
 		align-items: center;
 		margin-right: 40px;
+
+		&:hover {
+			cursor: pointer;
+		}
 
 		&:before {
 			content: '';
