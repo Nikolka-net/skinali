@@ -182,6 +182,18 @@ body {
   font-family: 'Proxima Nova Light', sans-serif;
   color: #262626;
 }
+.section {
+  padding: 100px 0;
+}
+.section-title {
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  text-transform: uppercase;
+}
+.section_title {
+  margin-bottom: 100px;
+}
 .button-o {
   border: 2px solid #507fe1;
   padding: 17px 22px;
@@ -232,6 +244,9 @@ input[type="checkbox"]:checked + label:before {
   .button-o {
     font-size: 10px;
   }
+  .section-title {
+    font-size: 24px;
+  }
 }
 /*Цвета*/
 /*Блок offer*/
@@ -239,8 +254,11 @@ input[type="checkbox"]:checked + label:before {
   padding: 129px 0;
 }
 .offer-block {
-  background-color: #fff;
+  background: #ffffff url('../images/offer/form-bg.png') no-repeat center right;
+  background-size: contain;
   padding: 80px;
+  margin-top: -200px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 }
 .offer_title {
   font-size: 25px;
@@ -281,4 +299,61 @@ input[type="checkbox"]:checked + label:before {
 .form_button {
   height: 80px;
   width: 100%;
+}
+@media (max-width: 1199px) {
+  .offer-block {
+    background-position: center right -120px;
+  }
+}
+@media (max-width: 768px) {
+  .offer-block {
+    background: none;
+    background-color: #fff;
+    padding: 40px;
+  }
+  .offer_title {
+    font-size: 18px;
+  }
+  .offer_subtitle {
+    font-size: 16px;
+  }
+  .form_row {
+    flex-direction: column;
+  }
+  .form_row-checkbox {
+    flex-direction: row;
+  }
+  .form_group {
+    flex-basis: 100%;
+    width: 100%;
+  }
+  .form_input {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .offer-block {
+    padding: 5px;
+  }
+}
+/*Блок features*/
+.features-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.features-block_item {
+  flex-basis: 33%;
+  text-align: center;
+  margin-bottom: 100px;
+}
+@media (max-width: 991px) {
+  .features-block_item {
+    flex-basis: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .features-block_item {
+    flex-basis: 100%;
+  }
 }
