@@ -5,14 +5,20 @@
 		flex-wrap: wrap;
 	}
 
+	&__card {
+		margin-bottom: 30px;
+	}
+
 	&-card {
 		max-width: 570px;
 		position: relative;
+		box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
 
 		&_buttons {
 			position: absolute;
 			bottom: 0;
 			right: 0;
+			display: flex;
 		}
 
 		&_button {
@@ -20,14 +26,36 @@
 			text-transform: uppercase;
 			border: none;
 			font-size: 11px;
+			height: 30px;
 		}
 
 		&_tag {
 			position: absolute;
-			top: 0;
-			right: 0;
+			top: 10px;
+			left: 10px;
+			font-size: 12px;
+			padding: 10px;
+			text-transform: uppercase;
+			color: #fff;
+			background-color: rgba(80, 127, 225, 0.6);
+		}
+
+		&_image {
+			display: block;
 		}
 	}
 
 
+}
+
+@media (max-width: 1199px) {
+	.catalog {
+		&-card {
+			max-width: 370px;
+		}
+
+		&-block {
+			justify-content: center;
+		}
+	}
 }

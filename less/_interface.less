@@ -3,6 +3,10 @@ body {
 	color: @text-color;
 }
 
+img {
+	max-width: 100%;
+}
+
 .section {
 	padding: 100px 0;
 
@@ -44,6 +48,13 @@ body {
 	&-add {
 		background-color: lighten(@primary, 10%);
 		color: #fff;
+	}
+
+	&-like {
+		background-color: @primary;
+		height: 30px;
+		border: none;
+		width: 30px;
 	}
 }
 
