@@ -230,6 +230,7 @@ img {
   font-family: 'Proxima Nova Semibold', sans-serif;
   color: #507fe1;
   background-color: #ffffff;
+  text-decoration: none;
 }
 .button {
   border: none;
@@ -238,6 +239,7 @@ img {
   background-color: #507fe1;
   color: #ffffff;
   font-family: 'Proxima Nova Semibold', sans-serif;
+  text-decoration: none;
 }
 .button-fitting {
   color: #507fe1;
@@ -429,6 +431,9 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 /*Блок catalog*/
+.catalog {
+  background-color: #f5f6f8;
+}
 .catalog-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -476,6 +481,17 @@ input[type="checkbox"]:checked + label:before {
 .catalog-card_image {
   display: block;
 }
+.catalog-link {
+  text-align: center;
+  margin-top: 60px;
+}
+.catalog_link-more {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+.catalog_description {
+  display: block;
+}
 @media (max-width: 1199px) {
   .catalog-card {
     max-width: 370px;
@@ -484,6 +500,70 @@ input[type="checkbox"]:checked + label:before {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+/*Блок blog-list*/
+.blog_heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 70px;
+}
+.blog_title {
+  font-size: 24px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+.blog_link-more {
+  color: #507fe1;
+  font-size: 16px;
+}
+.blog-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.blog-list_image {
+  height: 200px;
+  overflow: hidden;
+}
+.blog-list_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 80px;
+}
+.blog-list_card {
+  margin-bottom: 40px;
+}
+.blog-card {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+}
+@media (max-width: 1199px) {
+  .blog-list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .blog-list_card {
+    margin-right: 30px;
+    margin-left: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
