@@ -443,3 +443,48 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 /*Блок blog-list*/
+.blog_heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.blog_title {
+  font-size: 24px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+.blog_link-more {
+  color: #507fe1;
+  font-size: 16px;
+}
+.blog-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.blog-list_image {
+  height: 200px;
+  overflow: hidden;
+}
+.blog-list_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
+}
+.blog-list_card {
+  margin-bottom: 40px;
+}
+.blog-card {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+}
+@media (max-width: 1199px) {
+  .blog-list {
+    justify-content: space-around;
+  }
+  .blog-list_card {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+}
+/*Блок price*/
