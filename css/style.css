@@ -825,6 +825,7 @@ input[type="checkbox"]:checked + label:before {
   max-width: 640px;
   margin: auto;
   position: relative;
+  z-index: 99;
 }
 .before-slider-arrows {
   position: absolute;
@@ -874,6 +875,7 @@ input[type="checkbox"]:checked + label:before {
 .arrow {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 .arrow:focus {
   outline: none;

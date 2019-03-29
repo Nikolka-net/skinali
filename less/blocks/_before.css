@@ -3,6 +3,7 @@
   max-width: 640px;
   margin: auto;
   position: relative;
+  z-index: 99;
 }
 .before-slider-arrows {
   position: absolute;
@@ -41,6 +42,7 @@
 .arrow {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 .arrow:focus {
   outline: none;
