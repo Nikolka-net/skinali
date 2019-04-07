@@ -35,7 +35,7 @@
   top: 0;
   width: 100%;
   background-color: #ffffff;
-  z-index: 99;
+  z-index: 100;
 }
 .navbar-wrap {
   display: -webkit-box;
@@ -68,21 +68,22 @@
 }
 .menu {
   position: fixed;
-  z-index: 0;
+  z-index: 100;
   top: 80px;
   left: 0;
   width: 100%;
   padding: 16px 0;
   background-color: #507fe1;
   color: #ffffff;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  -webkit-transition: 1s;
+  transition: 1s;
   -webkit-transform: translateY(-200%);
           transform: translateY(-200%);
   opacity: 0;
 }
 .menu_active {
-  /*transform: translateY(0);*/
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
   opacity: 1;
 }
 .menu_nav {
@@ -121,6 +122,12 @@
   border-left: 1px solid rgba(81, 11, 186, 0.1);
   width: 70px;
   height: 80px;
+}
+.menu-button:hover {
+  cursor: pointer;
+}
+.menu-button:focus {
+  outline: none;
 }
 .menu-button_line {
   display: block;
@@ -363,6 +370,50 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked + label:before {
   background-color: #507fe1;
 }
+.select {
+  height: 80px;
+  width: 100%;
+  border: 1px solid #dddddd;
+  position: relative;
+}
+.select:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  background: url('../images/caret.png') no-repeat center;
+}
+.select:hover {
+  cursor: pointer;
+}
+.select_checked {
+  line-height: 80px;
+  padding-left: 30px;
+}
+.select__dropdown {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #dddddd;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: none;
+}
+.select__dropdown_open {
+  display: block;
+}
+.select__option {
+  padding: 20px;
+}
+.select__option:hover {
+  background-color: #f1f1f1;
+}
 .checkbox-label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -580,6 +631,12 @@ input[type="checkbox"]:checked + label:before {
   position: relative;
   -webkit-box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
           box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+  overflow-y: hidden;
+}
+.catalog-card:hover .catalog-card_buttons {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 .catalog-card_buttons {
   position: absolute;
@@ -588,6 +645,11 @@ input[type="checkbox"]:checked + label:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
 }
 .catalog-card_button {
   padding: 10px;

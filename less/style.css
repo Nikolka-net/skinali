@@ -69,12 +69,12 @@
   padding: 16px 0;
   background-color: #507fe1;
   color: #ffffff;
-  transition-duration: 1s;
+  transition: 1s;
   transform: translateY(-200%);
   opacity: 0;
 }
 .menu_active {
-  /*transform: translateY(0);*/
+  transform: translateY(0);
   opacity: 1;
 }
 .menu_nav {
@@ -99,6 +99,12 @@
   border-left: 1px solid rgba(81, 11, 186, 0.1);
   width: 70px;
   height: 80px;
+}
+.menu-button:hover {
+  cursor: pointer;
+}
+.menu-button:focus {
+  outline: none;
 }
 .menu-button_line {
   display: block;
@@ -341,6 +347,25 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked + label:before {
   background-color: #507fe1;
 }
+.select {
+  height: 80px;
+  width: 100%;
+  border: 1px solid #dddddd;
+  position: relative;
+}
+.select_checked {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+.select__dropdown {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #dddddd;
+  margin: 0;
+}
 .checkbox-label {
   display: flex;
   align-items: center;
@@ -522,12 +547,20 @@ input[type="checkbox"]:checked + label:before {
   max-width: 570px;
   position: relative;
   box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+  overflow-y: hidden;
+}
+.catalog-card:hover .catalog-card_buttons {
+  transform: translateY(0);
+  opacity: 1;
 }
 .catalog-card_buttons {
   position: absolute;
   bottom: 0;
   right: 0;
   display: flex;
+  opacity: 0;
+  transition: 0.2s;
+  transform: translateY(100%);
 }
 .catalog-card_button {
   padding: 10px;
@@ -721,9 +754,59 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 /*Блок before*/
-.before-slider {
+.before-slider-wrap {
   max-width: 640px;
   margin: auto;
+  position: relative;
+  z-index: 99;
+}
+.before-slider-arrows {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-100%);
+  z-index: -1;
+}
+.before-slider__dots {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+.before-slider__dots li {
+  width: 10px;
+  height: 10px;
+  background-color: #d1d1d1;
+  border-radius: 50%;
+  margin: 5px;
+}
+.before-slider__dots li:hover {
+  cursor: pointer;
+}
+.before-slider__dots li.slick-active {
+  background-color: #5b7fda;
+}
+.before-slider__dots button {
+  display: none;
+}
+.arrow {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.arrow:focus {
+  outline: none;
+}
+.arrow-left {
+  transform: translateX(-150%);
+}
+.arrow-right {
+  transform: translateX(150%);
 }
 /*Блок reviews*/
 .reviews {
