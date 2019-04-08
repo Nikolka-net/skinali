@@ -31,4 +31,14 @@
 			return false;
 		});
 		$('input[type="tel"]').mask("+7(999) 999-9999");
+		/*Показывать карту только когда до неё докрутили*/
+		var reviews = $('.reviews');
+		var reviewsTop = reviews.offset().top;
+		$(window).bind('scroll', function () {
+			var windowTop = $(this).scrollTop();
+			if (windowTop > reviewsTop) {
+				$('#map').html('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A309ceaf925a2771ebfe298d06c308f2d3325b9107b4ee4fa486f0159ff66dd53&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=false"></script>');
+				$(window).unbind('scroll');
+			};
+		});
 	});

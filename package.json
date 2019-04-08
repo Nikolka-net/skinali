@@ -1,0 +1,25 @@
+{
+  "name": "skinali",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikolka-net/skinali.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nikolka-net/skinali/issues"
+  },
+  "homepage": "https://github.com/Nikolka-net/skinali#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  },
+  "dependencies": {
+    "gulp-tinypng-compress": "^1.2.1"
+  }
+}
