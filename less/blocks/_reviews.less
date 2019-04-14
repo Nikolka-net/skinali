@@ -5,6 +5,7 @@
 		display: flex;
 		justify-content: space-between;
 
+
 		&__item {
 			text-align: center;
 		}
@@ -38,6 +39,17 @@
 				border: 10px solid transparent;
 				border-top: 10px solid #fff;
 			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.reviews {
+		&-slider {
+			display: flex;
+			justify-content: flex-start;
+			overflow-x: auto;
+
 		}
 	}
 }

@@ -1487,6 +1487,20 @@ input[type="checkbox"]:checked + label:before {
   -webkit-transform: translateX(150%);
           transform: translateX(150%);
 }
+@media (max-width: 768px) {
+  .before-slider-arrows {
+    z-index: 0;
+    opacity: 0.4;
+  }
+  .arrow-left {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .arrow-right {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
 /*Блок reviews*/
 .reviews {
   background-color: #f5f6f8;
@@ -1530,6 +1544,17 @@ input[type="checkbox"]:checked + label:before {
   height: 10px;
   border: 10px solid transparent;
   border-top: 10px solid #fff;
+}
+@media (max-width: 768px) {
+  .reviews-slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    overflow-x: auto;
+  }
 }
 /*Блок factory*/
 .factory-block {

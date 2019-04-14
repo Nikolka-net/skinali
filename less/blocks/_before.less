@@ -69,3 +69,24 @@
 		transform: translateX(150%);
 	}
 }
+
+@media (max-width: 768px) {
+	.before {
+		&-slider {
+			&-arrows {
+				z-index: 0;
+				opacity: 0.4;
+			}
+		}
+	}
+
+	.arrow {
+		&-left {
+			transform: translateX(0);
+		}
+
+		&-right {
+			transform: translateX(0);
+		}
+	}
+}
